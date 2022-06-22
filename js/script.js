@@ -10,12 +10,12 @@
  */
 function calculate() {
   // input
-  const radius = parseInt(document.getElementById('radius-of-trapezoid').value)
+  const radius = parseInt(document.getElementById('radius-of-sphere').value)
 
   
   // process
-  const volume = 4 / 3 ( Math.PI * radius **3) 
+  const volume = (4 / 3) * Math.PI * Math.pow(radius, 3) 
 
   // output
-  document.getElementById('volume').innerHTML = 'Volume is: ' + volume + ' cm3'
+  document.getElementById("volume").innerHTML = "The volume of the sphere is: " + volume.toFixed(2) + " cm³"
 }
